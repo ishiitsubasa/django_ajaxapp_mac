@@ -83,9 +83,16 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-default_dburl="sqlite:///"+str(BASE_DIR/"db.sqlite3")
-DATABASES={
-  "default":config("DATABASE_URL",default_dburl, cast=dburl),
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ajax_app',
+        'USER': 'postgres',
+        'PASSWORD': '5PYmVbS8', # ご自身で設定したパスワード
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
 #DATABASES = {
     #'default': {
