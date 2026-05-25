@@ -90,16 +90,16 @@ DATABASES = {
     "default": config("DATABASE_URL", default=default_dburl, cast=dburl),
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ajax_app',
-        'USER': 'postgres',
-        'PASSWORD': '5PYmVbS8', # ご自身で設定したパスワード
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+#DATABASES = {
+    #'default': {
+     #   'ENGINE': 'django.db.backends.postgresql',
+      #  'NAME': 'ajax_app',
+       # 'USER': 'postgres',
+        #'PASSWORD': '5PYmVbS8', # ご自身で設定したパスワード
+        #'HOST': 'localhost',
+        #'PORT': '5432',
+    #}
+#}
 #DATABASES = {
     #'default': {
         #'ENGINE': 'django.db.backends.postgresql',
